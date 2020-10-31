@@ -1,0 +1,168 @@
+/*=== Movil <425px ===*/
+@media(max-width:500px){
+
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .products-container{
+        justify-content: space-evenly;
+    }
+    .product-container{
+        width: 48%;
+        margin: 0.1rem;
+    }
+    .btn{
+        width: 98%;
+    }
+    .desktop,.tablet{
+        display: none;
+    }
+    .search-form{
+        width: 60%;
+    }
+    .search-form_input{
+        font-size:0.8rem;
+        height: 100%;
+        padding: 0.6rem;
+    }
+
+    header img{
+        width: 120%;
+    }
+    .logo-header{
+        width: 15%;
+    }
+    .menuBar{
+        display: inline-block;
+        cursor: pointer;
+        width: 10%;
+        padding-left: 0.1rem;
+    }
+    .bar{
+        width: 2rem;
+        height: 0.3rem;
+        background-color: #333;
+        margin: 6px 0;
+        border-radius: 0.2em;
+    }
+/* Productos */
+.box-prd{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    width:100%;
+    background-color:#ffffff;
+    margin:auto;
+    border-bottom: 0.2em #ebebeb solid;
+}
+.detalle-prd{
+    width: 60%;
+    margin: 0;
+}
+.desc-prd{
+    align-self: center;
+    text-align:center;
+}
+.img-container{
+    max-width: 40%; 
+    padding: 1%;   
+}
+.precio-prd{
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+    padding: auto;
+    
+}
+
+/*==== Locales =====*/
+.locales article{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.locales section{
+    width: 100%;
+}
+
+.locales article{
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 12px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.locales article div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 8px;
+ }
+
+ .locales article div img{
+    width: 100%;
+ }
+
+
+/*==== Footer =====*/
+footer{
+    background-color: var(--background-color-header);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-arround;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    color: white;
+    }
+    
+footer div{
+    width: 100%;
+    padding-left: 5px;
+    }
+    
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    }
+        
+footer li a {
+    text-decoration: none;
+    color: white;
+    }
+    
+footer li a:hover{
+    background-color: grey;
+    }
+    
+footer i {
+    color: white;
+    }
+    
+.footer3 i {
+    font-size: 30px;
+    }
+    
+.footer3 ul li{
+    display: inline-block;
+    padding-right: 10px;
+    }
+    
+.footer4 img{
+    height: 50px;
+    }
+    
+.copyright{
+    text-align: right;
+    font-size: 8px;
+    
+}
+
+}

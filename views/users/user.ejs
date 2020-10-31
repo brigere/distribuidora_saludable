@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora Saludable</title>
+
+    <link rel="stylesheet" href="/css/cart.css">
+    <%- include('../partials/styles-and-fonts') %> 
+</head>
+<body>
+    <%- include('../partials/header') %> 
+    
+          
+            <h1> Tu perfil</h1>
+            
+               
+            
+            <div class="profile">
+                <img src="/tmp/myUploads/<%=avatar%>" alt="Perfil/<%= first_name %>">
+                
+                <h2><%= first_name %> <%=last_name%></h2>
+                
+                <p>Email: <%=email%></p> 
+                
+            
+            </div>
+            
+           
+                <div class="button">
+                    <a href="/users/profile/edit"><i class="fas fa-user-edit"></i> Editar</a>
+                </div>
+            </form>
+
+    <%- include('../partials/footer') %> 
+</body>
+</html>

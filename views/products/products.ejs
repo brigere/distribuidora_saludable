@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora Saludable</title>
+    
+    <style>
+        .pagination {
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        .pagination a{
+            font: 1.2rem;
+            font-weight: 700;
+            padding: 0.8rem 1.4rem;
+            background-color: var(--pink-1);
+            color:#efefef;
+            cursor: pointer;
+        }
+        .pagination a:hover{
+            background-color: #1d5a03;
+        }
+
+    </style>
+
+    <%- include('../partials/styles-and-fonts') %> 
+
+</head>
+<body>
+    <%- include('../partials/header') %>
+    
+    <h1>Todos nuestros productos</h1>
+    <!-- <div class="title add-shadow-bottom"><h3>Todos nuestros productos</h3></div> -->
+    <div class="container"> 
+        <div style="text-align: right;margin: 0.5rem 0.8rem;">
+            <select name="limit" id="ver" value="8">
+                <option value="8">Ver</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="50">48</option>
+            </select>
+        </div>
+
+        <div id="productsContainer" class="products-container">  
+        </div>
+    </div>
+
+    <!-- pagination button -->
+    <div class=pages>
+        <!-- <input id="actualPage" type="number" min="1" onchange="loadData(this.value,limit)"> -->
+        <span id="actPage"></span>
+        <span>de</span>
+        <span id='totalPages'></span>
+    </div>
+    <div class="pagination">
+        <a id="previous" onclick="previousPage()"><</a>
+        <a id="next" onclick="nextPage()">></a>
+    </div>
+
+    <script src="/js/paginate.js"></script>
+
+</body>
+</html>
