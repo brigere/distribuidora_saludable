@@ -1,3 +1,6 @@
+add_data.sql
+database_creation.sql
+
 # Logs
 logs
 *.log
