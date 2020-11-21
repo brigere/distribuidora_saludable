@@ -18,13 +18,13 @@
                 <% }) %> 
             </div>
         </li>
-        <li class="dropdown">
+        <!--li class="dropdown">
             <a class="dropbtn"><i class="fas fa-angle-down"></i> Conocénos</a>
             <div class="dropdown-content">
                 <a href="/locales">Locales</a>
                 <a href="/about">Nosotros</a>
             </div>
-        </li>
+        </li-->
         <% if(locals.user){ %>
             <li class="dropdown">
                 <a href="/users/profile" class="dropbtn"><i class="fas fa-user"></i> <%= locals.user %> </a>
@@ -50,13 +50,28 @@
 </header>
 <div class="topnav">
     <div id="myLinks">
-        <a href="/products/categories"><i class="fas fa-apple-alt"></i> Categorías</a>
-        <a href="/users/cart"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        <a href="/products/categories">
+            <i class="fas fa-apple-alt"></i> 
+            <span>Categorías</span>
+        </a>
+        <a href="/users/cart">
+            <i class="fas fa-shopping-cart"></i> 
+            <span>Carrito</span>
+        </a>
         <% if(locals.user){ %>
-        <a href="/users/profile"><i class="fas fa-user"></i> Mi perfil</a>
-        <a href="/logout"><i class="fas fa-sign-out-alt"></i> Salir</a>
+        <a href="/users/profile">
+            <i class="fas fa-user"></i> 
+            <span>Mi perfil</span>
+        </a>
+        <a href="/logout">
+            <i class="fas fa-sign-out-alt"></i> 
+            <span>Salir</span>
+        </a>
         <% }else{ %> 
-        <a href="/login"><i class="fas fa-user"></i> Ingresar</a>
+        <a href="/login">
+            <i class="fas fa-user"></i> 
+            <span>Ingresar</span>
+        </a>
         <% } %> 
     </div>
 </div>

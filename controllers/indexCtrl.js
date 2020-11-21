@@ -40,14 +40,14 @@ module.exports ={
             })
         }catch(e){console.log(e)}
     },
-    locales: (req,res)=>{
+    locales: async(req,res)=>{
         res.render('about/locales',{
-            categories:categories_db.data
+            categories:await category.findAll()
         })
     },
-    about: (req,res)=>{ 
+    about: async(req,res)=>{ 
         res.render('about/about',{
-            categories:categories_db.data
+            categories:await category.findAll()
         })
     },
     cart:async(req,res)=>{

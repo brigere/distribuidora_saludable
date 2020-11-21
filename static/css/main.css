@@ -14,7 +14,7 @@
 body{
     background-color:#ebebeb;
     margin: 0;
-
+    height: 100vh;
     font-family:'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #333232;
 
@@ -339,7 +339,7 @@ h1 {
 }
 
 /*==== Footer =====*/
-footer{
+/* footer{
     background-color: var(--background-color-header);
     display:flex;
     flex-wrap: wrap;
@@ -349,8 +349,8 @@ footer{
     height: auto;
     color: white;
     margin-top: 150px;
-    }
-    
+    } */
+/*     
 footer div{
     width: 33%;
     padding-left: 12px;
@@ -385,12 +385,16 @@ footer i {
     
 .footer4 img{
     height: 50px;
-    }
-    
+    } */
+
 .copyright{
+    background-color: #ddd;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    font-size: 8px;
-    
+    font-size: 0.5rem;
+    padding: 0.5rem;
 }
 .overflow-text{
     white-space: nowrap; 
@@ -514,7 +518,7 @@ a.to-product{
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--background-color-header);
     position: relative;
   }
   
@@ -528,6 +532,11 @@ a.to-product{
     text-decoration: none;
     font-size: 17px;
     display: block;
+  }
+
+  .topnav i{
+    width: 10%;
+    text-align: center;
   }
   
   .topnav a.icon {
@@ -547,3 +556,18 @@ a.to-product{
     background-color: #4CAF50;
     color: white;
   }
+
+
+footer{
+    width: 100%;
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 0;
+}
+footer p{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+    background-color: #ddd;
+}
